@@ -24,6 +24,6 @@ setup(
     author_email='yash3a@gmail.com',
     description='Face-Recognition based Attendance System',
     options={'py2exe': {'bundle_files': 1, 'compressed': True}},
-    windows=[{'script': "AttendanceProject.py"}],
+    windows=[{'script': "AttendanceProjectHome.py"}],
     zipfile=None,
 )
