@@ -1,1 +1,29 @@
-{}
+{
+    "LoggedInUser": {
+        "Data": {
+            "Name": "abc",
+            "College": "SSBT",
+            "Department": "Civil",
+            "Email": "hod@civil.com",
+            "Classes": {
+                "BE": [
+                    "A",
+                    "B"
+                ],
+                "FE": [
+                    "A",
+                    "B"
+                ],
+                "SE": [
+                    "A",
+                    "B"
+                ],
+                "TE": [
+                    "A",
+                    "B"
+                ]
+            }
+        },
+        "Type": "Hod"
+    }
+}
