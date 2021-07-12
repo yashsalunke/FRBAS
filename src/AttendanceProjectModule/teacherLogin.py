@@ -37,14 +37,18 @@ def check():
                     loggedInUser = DataClasses.TeacherDetails(user['Name'], user['Department'], user['Email'],
                                                               user['College'])
                 print(loggedInUser.getDetails())
-                with open('../../Data/metadata.json', 'w+') as metadataFile:
+                with open('metadata.json', 'w+') as metadataFile:
                     data = {'LoggedInUser': {'Data': loggedInUser.getDetails(), 'Type': 'Teacher'}}
                     json.dump(data, metadataFile, indent=4)
                     metadataFile.close()
                 loginWindow()
+            else:
+                messagebox.showwarning("Failed", "Invalid Credentials.\n Please Check entered Credentials.")
+                return
 
     else:
         messagebox.showwarning("Failed", "Invalid Credentials.\n Please Check entered Credentials.")
+        return
 
 
 def checkLoggedInUser():

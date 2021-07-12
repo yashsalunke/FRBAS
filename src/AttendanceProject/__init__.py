@@ -1,3 +1,0 @@
-import AttendanceProjectHome
-
-AttendanceProjectHome.fun()
